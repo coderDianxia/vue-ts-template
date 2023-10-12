@@ -1,30 +1,42 @@
 # Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-# 初始化创建项目模板
+# 新手必读
+  开发环境 node >=16.17.0 pnpm>=8.7.0
+# 项目介绍
+  基于 Vue 3 + TypeScript + Vite+Element-Plus开发的脚手架,跳过引入常用的插件过程，方便开发
+# 项目启动
+  安装pnpm
+  npm install  pnpm -g
+  查看源
+  pnpm config get registry
+  切换为淘宝源
+  pnpm config set registry https://registry.npmmirror.com/
+  安装
+  pnpm install
+  启动
+  pnpm run dev
+# 技术栈
+| 框架                    | 说明                             | 版本   |
+| ----------------------- | -------------------------------- | ------ |
+| Vue                     | Vue 框架                         | 3.3.4  |
+| Vite                    | 开发与构建工具                   | 4.4.5  |
+| Element Plus            | Element Plus                     | 2.3.14 |
+| TypeScript              | JavaScript 的超集                | 5.0.2  |
+| pinia                   | Vue 存储库 替代 vuex5            | 2.1.6  |
+| vue-router              | Vue 路由                         | 4.2.4  |
+| qs                      | 查询字符串解析和序列化字符串的库 | 6.11.2 |
+| web-storage-cache       | 前端缓存                         | 1.1.1  |
+| axios                   | 基于 Promise 的 HTTP 库          | 1.5.0  |
+| @element-plus/icons-vue | 图标库                           | 2.1.0  |
+   
+# 搭建脚手架部分过程
+## 初始化创建项目模板
 pnpm create vite link-share-web --template vue-ts
-# 安装启动项目
+## 安装启动项目
 cd link-share-web
 pnpm install
 pnpm run dev
 
-# 代码检查工具
+## 代码检查工具
 1. 安装 
    pnpm install eslint --save-dev
 2. 初始化配置
